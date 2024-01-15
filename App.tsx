@@ -1,19 +1,19 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import HelloWorld from './Lessons/lesson2/HelloWorld';
 import Greeter from './Lessons/lesson2/Greeter';
 
 export default function App() {
   return (
     //lesson2
-    // <View style={styles.container}>
-    //   <Text style={ { fontSize: 25, color:'white', backgroundColor: 'black' } }>Hello React Native World! I am Airen!</Text>
-    //   <Text style={ styles.textDemo }>You can not write text without Text elements.</Text>
-    //   <Text style= {{...styles.textDemo, ...styles.someOfOtherStyle}}>Combine two existing Object</Text>
-    //   <HelloWorld />
-    //   <HelloWorld />
-    //   <Greeter name="Airen"/>
-    //   <Greeter name="Talha"/>
-    // </View>
+    /*<View style={styles.container}>
+       <Text style={ { fontSize: 25, color:'white', backgroundColor: 'black' } }>Hello React Native World! I am Airen!</Text>
+       <Text style={ styles.textDemo }>You can not write text without Text elements.</Text>
+       <Text style= {{...styles.textDemo, ...styles.someOfOtherStyle}}>Combine two existing Object</Text>
+       <HelloWorld />
+       <HelloWorld />
+       <Greeter name="Airen"/>
+       <Greeter name="Talha"/>
+    </View>*/
 
     //lesson3
     /*<View style={styles.container}>
@@ -24,7 +24,7 @@ export default function App() {
     </View>*/
 
     //Exercise-01:
-    <View style={styles.container}>
+    /*<View style={styles.container}>
         <View style={ styles.firstRow }>
           <View style={{ ...styles.item, backgroundColor: '#22F', flex: 1 }}></View>
           <View style={{ ...styles.item, backgroundColor: '#22A', flex: 2 }}></View>
@@ -42,6 +42,14 @@ export default function App() {
             <View style={{flex: 1, backgroundColor: '#DDC', width: '100%'}}></View>
         </View>
     </View> 
+*/
+  //Images
+  <View style={styles.container}>
+    <Image 
+    resizeMode='contain'
+    source={require('./image/maa.jpg')} 
+    style={{width: 400, height: 300, backgroundColor: 'pink'}} />
+  </View> 
   );
 }
 
@@ -92,6 +100,40 @@ export default function App() {
 });*/
 
 //Exercise-01:
+/*const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    backgroundColor: '#000',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    width: '100%',
+    height: '100%',
+    paddingTop: 50,
+  },
+  firstRow: {
+    flex: 1,
+    flexDirection: 'row',
+  },
+  secondRow: {
+    flex: 2,
+    backgroundColor: '#0D0',
+    width:'100%',
+  },
+  thirdRow: {
+    flex: 1,
+    flexDirection: 'row',
+  },
+  forthRow: {
+    flex: 1,
+    flexDirection: 'row',
+  },
+  item: {
+    height: '100%',
+  }
+});*/
+
+//Images
 const styles = StyleSheet.create({
   container: {
     flex: 1,
