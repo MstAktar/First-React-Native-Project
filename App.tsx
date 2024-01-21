@@ -13,7 +13,7 @@ export default function App() {
        <HelloWorld />
        <Greeter name="Airen"/>
        <Greeter name="Talha"/>
-    </View>*/
+    </View>   );*/
 
     //lesson3
     /*<View style={styles.container}>
@@ -21,10 +21,11 @@ export default function App() {
         <View style={{width: 80, height: 80, backgroundColor:'green'}}></View>
         <View style={{width: 80, height: 80, backgroundColor:'blue'}}></View>
         <View style={{width: 80, height: 80, backgroundColor:'pink'}}></View>
-    </View>*/
+    </View>
+      );}*/
 
     //Exercise-01:
-    /*<View style={styles.container}>
+    <View style={styles.container}>
         <View style={ styles.firstRow }>
           <View style={{ ...styles.item, backgroundColor: '#22F', flex: 1 }}></View>
           <View style={{ ...styles.item, backgroundColor: '#22A', flex: 2 }}></View>
@@ -38,20 +39,22 @@ export default function App() {
             <View style={{...styles.item, backgroundColor: '#090', flex: 1 }}></View>
         </View>
         <View style={styles.forthRow}>
-            <View style={{flex: 1, backgroundColor: '#DDF', width: '100%'}}></View>
-            <View style={{flex: 1, backgroundColor: '#DDC', width: '100%'}}></View>
+            <View style={{backgroundColor: 'yellow', flexGrow: 1}}></View>
+            <View style={{backgroundColor: 'pink', flexGrow: 1}}></View>
         </View>
     </View> 
-*/
+  );
+}
+
   //Images
-  <View style={styles.container}>
+  /*<View style={styles.container}>
     <Image 
     resizeMode='contain'
     source={require('./image/maa.jpg')} 
     style={{width: 400, height: 300, backgroundColor: 'pink'}} />
   </View> 
   );
-}
+}*/
 
 //lesson2
 // const styles = StyleSheet.create({
@@ -100,6 +103,42 @@ export default function App() {
 });*/
 
 //Exercise-01:
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    backgroundColor: '#000',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    width: '100%',
+    height: '100%',
+    paddingTop: 50,
+  },
+  firstRow: {
+    flex: 1,
+    flexDirection: 'row',
+  },
+  secondRow: {
+    flex: 2,
+    backgroundColor: '#0D0',
+    width:'100%',
+  },
+  thirdRow: {
+    flex: 1,
+    flexDirection: 'row',
+  },
+  forthRow: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'stretch',
+  },
+  item: {
+    height: '100%',
+  }
+});
+
+//Images
 /*const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -132,38 +171,4 @@ export default function App() {
     height: '100%',
   }
 });*/
-
-//Images
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'column',
-    backgroundColor: '#000',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    width: '100%',
-    height: '100%',
-    paddingTop: 50,
-  },
-  firstRow: {
-    flex: 1,
-    flexDirection: 'row',
-  },
-  secondRow: {
-    flex: 2,
-    backgroundColor: '#0D0',
-    width:'100%',
-  },
-  thirdRow: {
-    flex: 1,
-    flexDirection: 'row',
-  },
-  forthRow: {
-    flex: 1,
-    flexDirection: 'row',
-  },
-  item: {
-    height: '100%',
-  }
-});
 
