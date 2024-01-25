@@ -2,7 +2,25 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import HelloWorld from './Lessons/lesson2/HelloWorld';
 import Greeter from './Lessons/lesson2/Greeter';
 
+import LoginScreen from "./Lessons/lesson4/LoginScreen";
+
 export default function App() {
+  return (
+    <View style={styles.container}>
+      <LoginScreen />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    paddingHorizontal: 15
+  },
+});
+
+/*export default function App() {
   return (
     //lesson2
     /*<View style={styles.container}>
@@ -25,7 +43,7 @@ export default function App() {
       );}*/
 
     //Exercise-01:
-<View style={ styles.container }>
+/*<View style={ styles.container }>
       <View style={ styles.firstRow }>
         <View style={{ ...styles.item, backgroundColor: '#22F', flex: 1}}></View>
         <View style={ {...styles.item, backgroundColor: '#22A', flex: 2}}></View>
@@ -42,7 +60,7 @@ export default function App() {
       </View>
     </View>
   )
-}
+}*/
 
   //Images
   /*<View style={styles.container}>
@@ -101,7 +119,7 @@ export default function App() {
 });*/
 
 //Exercise-01:
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
@@ -133,7 +151,7 @@ const styles = StyleSheet.create({
     height: '100%'
   }
 
-})
+})*/
 
 //Images
 /*const styles = StyleSheet.create({
